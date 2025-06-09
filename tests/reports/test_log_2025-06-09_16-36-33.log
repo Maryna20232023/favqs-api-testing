@@ -1,0 +1,21 @@
+2025-06-09 16:36:33,883 - INFO - 
+🔹 START TEST: test_user_creation[user0]
+2025-06-09 16:36:34,562 - INFO - Creating a user: {'User-Token': 'FitP3spZW/0IuxwZ60MzQ7Qd8LT8fbkUvLK+LjqhG02ooYBkBOX4RUWDwZT0BJfCACaBNYLfWK1MwmVU/hynNA==', 'login': 'dqnodtmazh'}
+2025-06-09 16:36:35,670 - INFO - Get user: {'login': 'dqnodtmazh', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_gjcowrbtwx@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 16:36:35,673 - INFO - 📝 STATUS TEST: test_user_creation[user0] — PASS
+2025-06-09 16:36:35,678 - INFO - ✅ END TEST: test_user_creation[user0]
+
+2025-06-09 16:36:35,681 - INFO - 
+🔹 START TEST: test_user_creation[user1]
+2025-06-09 16:36:36,392 - INFO - Creating a user: {'User-Token': 'JLNiHJyz2iWhJ+PvlA6guzZAUQolWgjVwAZT+AYZIHN12cSB1TignyI7UuzOyy4PEU9DKGdMEDkTznMcqP8Dtw==', 'login': 'sxwwqcmvyx'}
+2025-06-09 16:36:37,502 - INFO - Get user: {'login': 'sxwwqcmvyx', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_hixienzxeg@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 16:36:37,504 - INFO - 📝 STATUS TEST: test_user_creation[user1] — PASS
+2025-06-09 16:36:37,505 - INFO - ✅ END TEST: test_user_creation[user1]
+
+2025-06-09 16:36:37,508 - INFO - 
+🔹 START TEST: test_user_creation[user2]
+2025-06-09 16:36:38,191 - INFO - Creating a user: {'User-Token': 'm7IiVz9o3R8Q3G1cO3O1XZYVkjlyyPr3liZ0vB/VNxWown/cGfCSGGgz19dNo1PqBqrxNLXx6ceOANYKjoSZQQ==', 'login': 'marpozydjo'}
+2025-06-09 16:36:39,304 - INFO - Get user: {'login': 'marpozydjo', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_kgmcdqsddt@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 16:36:39,308 - INFO - 📝 STATUS TEST: test_user_creation[user2] — PASS
+2025-06-09 16:36:39,312 - INFO - ✅ END TEST: test_user_creation[user2]
+
