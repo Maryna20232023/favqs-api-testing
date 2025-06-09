@@ -50,7 +50,6 @@ def test_user_update(update_data, created_user):
     assert get_user_response_api.json()['account_details']['email'] == updated_user['user']['email'], f"API Response return wrong email."\
           f"Expected: {user['user']['email']}, Actual email: {get_user_response_api.json()['account_details']['email']},"
 
-@pytest.mark.customers
 def test_user_update_negative_non_existent_user(created_user):
 
     # Create new valid user
@@ -81,7 +80,6 @@ def test_user_update_negative_non_existent_user(created_user):
     assert update_user_response_api.status_code == 200, f"Bad Status code."\
           f"Expected: 200, Actual status code: {update_user_response_api.status_code},"
 
-@pytest.mark.customers
 @pytest.mark.parametrize("login", generate_invalid_logins())
 def test_user_update_negative_invalid_logins(login, created_user):
     # Create new valid user
@@ -106,7 +104,6 @@ def test_user_update_negative_invalid_logins(login, created_user):
     assert update_user_response_api.status_code == 200, f"Bad Status code."\
           f"Expected: 200, Actual status code: {update_user_response_api.status_code},"
 
-@pytest.mark.customers
 @pytest.mark.parametrize("email", generate_invalid_emails())
 def test_user_update_negative_invalid_emails(email, created_user):
 
