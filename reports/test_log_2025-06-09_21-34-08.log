@@ -1,0 +1,198 @@
+2025-06-09 21:34:08,336 - INFO - 
+🔹 START TEST: test_user_update[update_data0]
+2025-06-09 21:34:09,186 - INFO - Creating a user: {'user': {'login': 'fnkvngqzic', 'email': 'testuser_zmzjwdrslq@gmail.com', 'password': 'xGddCHjOJTYebwtRuHIF'}}
+2025-06-09 21:34:09,187 - INFO - Updating the user with new data: {'user': {'login': 'rfczgwdtem', 'email': 'testuser_zfurippvbc@gmail.com'}}
+2025-06-09 21:34:10,492 - INFO - Status code for updating user data: 200
+2025-06-09 21:34:11,703 - INFO - Get updated user data: {'login': 'rfczgwdtem', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_zfurippvbc@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 21:34:11,707 - INFO - 📝 STATUS TEST: test_user_update[update_data0] — PASS
+2025-06-09 21:34:11,711 - INFO - ✅ END TEST: test_user_update[update_data0]
+
+2025-06-09 21:34:11,716 - INFO - 
+🔹 START TEST: test_user_update[update_data1]
+2025-06-09 21:34:12,472 - INFO - Creating a user: {'user': {'login': 'jtfwozzenj', 'email': 'testuser_givfopeqzm@gmail.com', 'password': 'FUVAnkWPrUbraAjJEwux'}}
+2025-06-09 21:34:12,474 - INFO - Updating the user with new data: {'user': {'login': 'dyzpdoietn', 'email': 'testuser_zlaeflwats@gmail.com'}}
+2025-06-09 21:34:13,650 - INFO - Status code for updating user data: 200
+2025-06-09 21:34:15,097 - INFO - Get updated user data: {'login': 'dyzpdoietn', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_zlaeflwats@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 21:34:15,100 - INFO - 📝 STATUS TEST: test_user_update[update_data1] — PASS
+2025-06-09 21:34:15,103 - INFO - ✅ END TEST: test_user_update[update_data1]
+
+2025-06-09 21:34:15,109 - INFO - 
+🔹 START TEST: test_user_update[update_data2]
+2025-06-09 21:34:15,829 - INFO - Creating a user: {'user': {'login': 'oeazmclyjh', 'email': 'testuser_edkvfuytuz@gmail.com', 'password': 'ExsqfqkdrRTyiXgfwzuY'}}
+2025-06-09 21:34:15,831 - INFO - Updating the user with new data: {'user': {'login': 'uvljprxydv', 'email': 'testuser_bomglsehld@gmail.com'}}
+2025-06-09 21:34:17,023 - INFO - Status code for updating user data: 200
+2025-06-09 21:34:18,294 - INFO - Get updated user data: {'login': 'uvljprxydv', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_bomglsehld@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 21:34:18,297 - INFO - 📝 STATUS TEST: test_user_update[update_data2] — PASS
+2025-06-09 21:34:18,300 - INFO - ✅ END TEST: test_user_update[update_data2]
+
+2025-06-09 21:34:18,305 - INFO - 
+🔹 START TEST: test_user_update_negative_non_existent_user
+2025-06-09 21:34:19,059 - INFO - Valid_user: {'user': {'login': 'haluagagyz', 'email': 'testuser_uxfacwzjrm@gmail.com', 'password': 'yfMtWgodLhRtltjsnxxs'}}
+2025-06-09 21:34:19,060 - INFO - Updating the user with  new data: {'user': {'login': 'qyvsluuysn', 'email': 'testuser_cfsjozajwg@gmail.com'}}
+2025-06-09 21:34:19,921 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:19,922 - INFO - Message for updating user data with invalid new data: {"error_code": 20, "message": "No user session found."}
+2025-06-09 21:34:19,925 - INFO - 📝 STATUS TEST: test_user_update_negative_non_existent_user — PASS
+2025-06-09 21:34:19,927 - INFO - ✅ END TEST: test_user_update_negative_non_existent_user
+
+2025-06-09 21:34:19,933 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[]
+2025-06-09 21:34:20,779 - INFO - Valid_user: {'user': {'login': 'fhybjvjghj', 'email': 'testuser_mtsmniapek@gmail.com', 'password': 'rINCwOPfoMPpEpvwpQeh'}}
+2025-06-09 21:34:20,780 - INFO - Updating the user with invalid new data: {'login': '', 'email': 'testuser_fcbfflhmpm@gmail.com'}
+2025-06-09 21:34:21,999 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:22,000 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username can't be blank; Username is too short (minimum is 1 character); Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Username must contain at least one letter"}
+2025-06-09 21:34:22,003 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[] — PASS
+2025-06-09 21:34:22,006 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[]
+
+2025-06-09 21:34:22,011 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[sOgWV1OgYsfIdSApqnaV1l7zttfoD4GLi6Witaz3B9zQTLE2Cw1]
+2025-06-09 21:34:22,894 - INFO - Valid_user: {'user': {'login': 'ggcvqhjfdw', 'email': 'testuser_vponymssld@gmail.com', 'password': 'QoflzVqeisgtaUYzHVfv'}}
+2025-06-09 21:34:22,896 - INFO - Updating the user with invalid new data: {'login': 'sOgWV1OgYsfIdSApqnaV1l7zttfoD4GLi6Witaz3B9zQTLE2Cw1', 'email': 'testuser_ipxphkmfzv@gmail.com'}
+2025-06-09 21:34:24,120 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:24,121 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username is too long (maximum is 20 characters)"}
+2025-06-09 21:34:24,123 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[sOgWV1OgYsfIdSApqnaV1l7zttfoD4GLi6Witaz3B9zQTLE2Cw1] — PASS
+2025-06-09 21:34:24,125 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[sOgWV1OgYsfIdSApqnaV1l7zttfoD4GLi6Witaz3B9zQTLE2Cw1]
+
+2025-06-09 21:34:24,131 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[login hjcnw spaces]
+2025-06-09 21:34:24,942 - INFO - Valid_user: {'user': {'login': 'mbwfmkmman', 'email': 'testuser_xbylerdfou@gmail.com', 'password': 'wXCkQMsivmigkjJYbLGg'}}
+2025-06-09 21:34:24,944 - INFO - Updating the user with invalid new data: {'login': 'login hjcnw spaces', 'email': 'testuser_qssgaxpvbp@gmail.com'}
+2025-06-09 21:34:26,168 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:26,169 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username can only contain letters (a-z), numbers (0-9) and the underscore (_)"}
+2025-06-09 21:34:26,171 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[login hjcnw spaces] — PASS
+2025-06-09 21:34:26,174 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[login hjcnw spaces]
+
+2025-06-09 21:34:26,181 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[\u043b\u043e\u0433\u0456\u043d_\u0437\u044c\u0439\u0456\u0440]
+2025-06-09 21:34:26,992 - INFO - Valid_user: {'user': {'login': 'vuatigjbnv', 'email': 'testuser_fveofjiwbr@gmail.com', 'password': 'GWcDNwjmEvoSpfRHfBXQ'}}
+2025-06-09 21:34:26,995 - INFO - Updating the user with invalid new data: {'login': 'логін_зьйір', 'email': 'testuser_iwekvydijj@gmail.com'}
+2025-06-09 21:34:28,216 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:28,217 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Username must contain at least one letter"}
+2025-06-09 21:34:28,219 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[\u043b\u043e\u0433\u0456\u043d_\u0437\u044c\u0439\u0456\u0440] — PASS
+2025-06-09 21:34:28,222 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[\u043b\u043e\u0433\u0456\u043d_\u0437\u044c\u0439\u0456\u0440]
+
+2025-06-09 21:34:28,227 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[(_=({;];]
+2025-06-09 21:34:29,038 - INFO - Valid_user: {'user': {'login': 'xgsvgffjlj', 'email': 'testuser_nkvbquckpu@gmail.com', 'password': 'lVuzGOWUDZoYFMEYpDWj'}}
+2025-06-09 21:34:29,040 - INFO - Updating the user with invalid new data: {'login': '(_=({;];', 'email': 'testuser_laypqetvzy@gmail.com'}
+2025-06-09 21:34:30,263 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:30,264 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Username must contain at least one letter"}
+2025-06-09 21:34:30,264 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[(_=({;];] — PASS
+2025-06-09 21:34:30,265 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[(_=({;];]
+
+2025-06-09 21:34:30,267 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[user\nname2]
+2025-06-09 21:34:31,116 - INFO - Valid_user: {'user': {'login': 'xtpqfyatgq', 'email': 'testuser_njwoynwxug@gmail.com', 'password': 'VetloEwWrhcZoMtjCBUU'}}
+2025-06-09 21:34:31,118 - INFO - Updating the user with invalid new data: {'login': 'user\nname2', 'email': 'testuser_ecudoemyof@gmail.com'}
+2025-06-09 21:34:32,296 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:32,297 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username can only contain letters (a-z), numbers (0-9) and the underscore (_)"}
+2025-06-09 21:34:32,299 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[user\nname2] — PASS
+2025-06-09 21:34:32,302 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[user\nname2]
+
+2025-06-09 21:34:32,307 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[22319]
+2025-06-09 21:34:33,064 - INFO - Valid_user: {'user': {'login': 'fyazdwyjsk', 'email': 'testuser_jsamqtrrsa@gmail.com', 'password': 'cljFPuxHIsiBSbIMppdX'}}
+2025-06-09 21:34:33,066 - INFO - Updating the user with invalid new data: {'login': 22319, 'email': 'testuser_pdtskydsvi@gmail.com'}
+2025-06-09 21:34:34,214 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:34,215 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username must contain at least one letter"}
+2025-06-09 21:34:34,217 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[22319] — PASS
+2025-06-09 21:34:34,219 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[22319]
+
+2025-06-09 21:34:34,225 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_logins[None]
+2025-06-09 21:34:35,080 - INFO - Valid_user: {'user': {'login': 'pcdaigfdog', 'email': 'testuser_ylrtumwrvv@gmail.com', 'password': 'sZBoLjvgVLSrRhCaoQTr'}}
+2025-06-09 21:34:35,082 - INFO - Updating the user with invalid new data: {'login': None, 'email': 'testuser_uphaxuqrgu@gmail.com'}
+2025-06-09 21:34:36,216 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:36,217 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Username can't be blank; Username is too short (minimum is 1 character); Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Username must contain at least one letter"}
+2025-06-09 21:34:36,220 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_logins[None] — PASS
+2025-06-09 21:34:36,223 - INFO - ✅ END TEST: test_user_update_negative_invalid_logins[None]
+
+2025-06-09 21:34:36,228 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[]
+2025-06-09 21:34:37,056 - INFO - Valid_user: {'user': {'login': 'lauissofsj', 'email': 'testuser_ulninrnfye@gmail.com', 'password': 'JAcebwAFQfDqmdJNJfrM'}}
+2025-06-09 21:34:37,058 - INFO - Updating the user with invalid new data: {'login': 'frgrirpmsg', 'email': ''}
+2025-06-09 21:34:38,251 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:38,252 - INFO - Message for updating user data with invalid new data: {"message": "User successfully updated."}
+2025-06-09 21:34:38,254 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[] — FAIL
+2025-06-09 21:34:38,338 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[]
+
+2025-06-09 21:34:38,339 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[TPkjYywUvl]
+2025-06-09 21:34:39,130 - INFO - Valid_user: {'user': {'login': 'bxedwocuau', 'email': 'testuser_xvpjvepboi@gmail.com', 'password': 'twtTcYhmfGEBkYgERrwn'}}
+2025-06-09 21:34:39,132 - INFO - Updating the user with invalid new data: {'login': 'trlukytthi', 'email': 'TPkjYywUvl'}
+2025-06-09 21:34:40,299 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:40,300 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:40,302 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[TPkjYywUvl] — PASS
+2025-06-09 21:34:40,305 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[TPkjYywUvl]
+
+2025-06-09 21:34:40,310 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[@qogfs.com]
+2025-06-09 21:34:41,139 - INFO - Valid_user: {'user': {'login': 'xsddygivtk', 'email': 'testuser_jgipbplleo@gmail.com', 'password': 'kQqStHuxlMGNZSnoYIxW'}}
+2025-06-09 21:34:41,141 - INFO - Updating the user with invalid new data: {'login': 'eamaosiyrr', 'email': '@qogfs.com'}
+2025-06-09 21:34:42,347 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:42,348 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:42,350 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[@qogfs.com] — PASS
+2025-06-09 21:34:42,353 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[@qogfs.com]
+
+2025-06-09 21:34:42,359 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[gaxjf@.com]
+2025-06-09 21:34:43,182 - INFO - Valid_user: {'user': {'login': 'zmscfvfatf', 'email': 'testuser_yggydqkqkr@gmail.com', 'password': 'JmOGBhmaCEPKRfoQgSad'}}
+2025-06-09 21:34:43,183 - INFO - Updating the user with invalid new data: {'login': 'wxbuuydpfe', 'email': 'gaxjf@.com'}
+2025-06-09 21:34:44,406 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:44,407 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:44,409 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[gaxjf@.com] — PASS
+2025-06-09 21:34:44,412 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[gaxjf@.com]
+
+2025-06-09 21:34:44,417 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[lbpwr@domain]
+2025-06-09 21:34:45,225 - INFO - Valid_user: {'user': {'login': 'uzswmftdpo', 'email': 'testuser_iznqzxycle@gmail.com', 'password': 'pWRCFuKlCDzEIrlVQFXp'}}
+2025-06-09 21:34:45,227 - INFO - Updating the user with invalid new data: {'login': 'tdukbtlxdk', 'email': 'lbpwr@domain'}
+2025-06-09 21:34:46,357 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:46,358 - INFO - Message for updating user data with invalid new data: {"message": "User successfully updated."}
+2025-06-09 21:34:46,359 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[lbpwr@domain] — FAIL
+2025-06-09 21:34:46,381 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[lbpwr@domain]
+
+2025-06-09 21:34:46,387 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[mcnel domain.com]
+2025-06-09 21:34:47,133 - INFO - Valid_user: {'user': {'login': 'ubomctvgeb', 'email': 'testuser_lpsjtidwdm@gmail.com', 'password': 'EwZkOCOSYkuIpNRkzaNU'}}
+2025-06-09 21:34:47,135 - INFO - Updating the user with invalid new data: {'login': 'zjszpeyrsf', 'email': 'mcnel domain.com'}
+2025-06-09 21:34:48,307 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:48,308 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:48,309 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[mcnel domain.com] — PASS
+2025-06-09 21:34:48,310 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[mcnel domain.com]
+
+2025-06-09 21:34:48,312 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[hoofc@domain..com]
+2025-06-09 21:34:49,169 - INFO - Valid_user: {'user': {'login': 'dlqaswqfsw', 'email': 'testuser_wgqdyqioqu@gmail.com', 'password': 'GTXMdDPmjbATANSSSomb'}}
+2025-06-09 21:34:49,171 - INFO - Updating the user with invalid new data: {'login': 'hrxkufjgig', 'email': 'hoofc@domain..com'}
+2025-06-09 21:34:50,437 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:50,438 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:50,440 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[hoofc@domain..com] — PASS
+2025-06-09 21:34:50,443 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[hoofc@domain..com]
+
+2025-06-09 21:34:50,448 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[iarbc@.domain.com]
+2025-06-09 21:34:51,185 - INFO - Valid_user: {'user': {'login': 'sjozfqybzj', 'email': 'testuser_vbtdwxbvic@gmail.com', 'password': 'xQLJvGyuYheHjeYEpJjc'}}
+2025-06-09 21:34:51,187 - INFO - Updating the user with invalid new data: {'login': 'hhphxszjue', 'email': 'iarbc@.domain.com'}
+2025-06-09 21:34:52,328 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:52,329 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:52,331 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[iarbc@.domain.com] — PASS
+2025-06-09 21:34:52,334 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[iarbc@.domain.com]
+
+2025-06-09 21:34:52,339 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[17118]
+2025-06-09 21:34:53,041 - INFO - Valid_user: {'user': {'login': 'mobztiesyr', 'email': 'testuser_lxbccrzldy@gmail.com', 'password': 'oLoKXeloBuRSzCyWoUkV'}}
+2025-06-09 21:34:53,043 - INFO - Updating the user with invalid new data: {'login': 'vjvwmlodza', 'email': 17118}
+2025-06-09 21:34:54,226 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:54,227 - INFO - Message for updating user data with invalid new data: {"error_code": 32, "message": "Email is not a valid email"}
+2025-06-09 21:34:54,229 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[17118] — PASS
+2025-06-09 21:34:54,232 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[17118]
+
+2025-06-09 21:34:54,237 - INFO - 
+🔹 START TEST: test_user_update_negative_invalid_emails[None]
+2025-06-09 21:34:55,046 - INFO - Valid_user: {'user': {'login': 'aotdnpbjlf', 'email': 'testuser_uuxwpfgkgb@gmail.com', 'password': 'IQbvdjnSfpvTwsWNidVt'}}
+2025-06-09 21:34:55,047 - INFO - Updating the user with invalid new data: {'login': 'pdcuhtgrij', 'email': None}
+2025-06-09 21:34:56,359 - INFO - Status code for updating user data with invalid new data: 200
+2025-06-09 21:34:56,361 - INFO - Message for updating user data with invalid new data: {"message": "User successfully updated."}
+2025-06-09 21:34:56,362 - INFO - 📝 STATUS TEST: test_user_update_negative_invalid_emails[None] — FAIL
+2025-06-09 21:34:56,384 - INFO - ✅ END TEST: test_user_update_negative_invalid_emails[None]
+

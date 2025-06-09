@@ -5,15 +5,18 @@ from datetime import datetime
 from utils.general_utils import generate_random_user, generate_user_data
 from utils.customer_utils import create_user, create_session
 
-os.makedirs("reports", exist_ok=True)
-log_filename = f"reports/test_log_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+
+os.makedirs(REPORTS_DIR, exist_ok=True)
+
+log_filename = os.path.join(REPORTS_DIR, f"test_log_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log")
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
         logging.FileHandler(log_filename, mode='w', encoding='utf-8'),
-        logging.StreamHandler()
     ]
 )
 logger = logging.getLogger()
@@ -25,7 +28,6 @@ def log_test_start_and_end(request):
     logger.info(f"✅ END TEST: {request.node.name}\n")
 
 def pytest_runtest_makereport(item, call):
-    # Лог статусу тесту після виконання (фаза 'call' - основне виконання тесту)
     if call.when == "call":
         status = "PASS" if call.excinfo is None else "FAIL"
         logger.info(f"📝 STATUS TEST: {item.name} — {status}")

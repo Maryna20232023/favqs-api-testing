@@ -1,0 +1,231 @@
+2025-06-09 21:16:56,752 - INFO - 
+🔹 START TEST: test_user_creation[user0]
+2025-06-09 21:16:57,600 - INFO - Creating a user: {'User-Token': 'HSR4NgL/Bk8TheP43kaTPXlFAZ5TNTPn36u6GWnPsd6tdEmUNaxHqYPkYN4c+dyW8dCRe13Y58Urwd0kDlFTDg==', 'login': 'jjircrahix'}
+2025-06-09 21:16:58,815 - INFO - Get user: {'login': 'jjircrahix', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_lfppjuugpw@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 21:16:58,817 - INFO - 📝 STATUS TEST: test_user_creation[user0] — PASS
+2025-06-09 21:16:58,819 - INFO - ✅ END TEST: test_user_creation[user0]
+
+2025-06-09 21:16:58,823 - INFO - 
+🔹 START TEST: test_user_creation[user1]
+2025-06-09 21:16:59,543 - INFO - Creating a user: {'User-Token': '6DydvIiTGEtlcKUPLyV89ylk9+ktl46X4iIF91D5xhnJ82utHEnSBv2klhNQiFsCX2lBUSrzGLQ8SiztjGlIkw==', 'login': 'pzghplypaq'}
+2025-06-09 21:17:00,697 - INFO - Get user: {'login': 'pzghplypaq', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_xfwjtpscht@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 21:17:00,699 - INFO - 📝 STATUS TEST: test_user_creation[user1] — PASS
+2025-06-09 21:17:00,701 - INFO - ✅ END TEST: test_user_creation[user1]
+
+2025-06-09 21:17:00,703 - INFO - 
+🔹 START TEST: test_user_creation[user2]
+2025-06-09 21:17:01,589 - INFO - Creating a user: {'User-Token': 'yu9nXyop0Vr8yIwT4UT2jXsawwCGDa510iAcAQaqQ2iTMnwGcE6C2DVrPvw36C/o+lv23o/cW5e8AsuPQ7A89Q==', 'login': 'uwfjpbmeql'}
+2025-06-09 21:17:02,879 - INFO - Get user: {'login': 'uwfjpbmeql', 'pic_url': 'https://favqs.s3.amazonaws.com/avatar.png', 'public_favorites_count': 0, 'following': 0, 'followers': 0, 'pro': None, 'account_details': {'email': 'testuser_vwgsgtwqha@gmail.com', 'private_favorites_count': 0}}
+2025-06-09 21:17:02,882 - INFO - 📝 STATUS TEST: test_user_creation[user2] — PASS
+2025-06-09 21:17:02,885 - INFO - ✅ END TEST: test_user_creation[user2]
+
+2025-06-09 21:17:02,890 - INFO - 
+🔹 START TEST: test_user_creation_negative_with_existing_user[user0]
+2025-06-09 21:17:03,721 - INFO - Creating a user: {'User-Token': '7aJsRcv3mZzDxUL6j2DpIYNnyWygoXRaRbvUNLjDqn3Wf2yusGO3FnWak5btiWt/X8cc7zLWCefUePwEqDBOFA==', 'login': 'xnodeeivvu'}
+2025-06-09 21:17:04,426 - INFO - Creating user with an existing email: {'error_code': 32, 'message': 'Username has already been taken; Email has already been taken'}
+2025-06-09 21:17:04,429 - INFO - 📝 STATUS TEST: test_user_creation_negative_with_existing_user[user0] — PASS
+2025-06-09 21:17:04,431 - INFO - ✅ END TEST: test_user_creation_negative_with_existing_user[user0]
+
+2025-06-09 21:17:04,437 - INFO - 
+🔹 START TEST: test_user_creation_negative_with_existing_user[user1]
+2025-06-09 21:17:05,159 - INFO - Creating a user: {'User-Token': '+25L23p2xvJycuScCVcE6Hu5nZJmCXW7bY/1ZqbI+6LsH6sW+xoyThujPK2naTThtQ/N6NMXtARJHwDTm7FStw==', 'login': 'nebdnosoir'}
+2025-06-09 21:17:05,894 - INFO - Creating user with an existing email: {'error_code': 32, 'message': 'Username has already been taken; Email has already been taken'}
+2025-06-09 21:17:05,896 - INFO - 📝 STATUS TEST: test_user_creation_negative_with_existing_user[user1] — PASS
+2025-06-09 21:17:05,898 - INFO - ✅ END TEST: test_user_creation_negative_with_existing_user[user1]
+
+2025-06-09 21:17:05,901 - INFO - 
+🔹 START TEST: test_user_creation_negative_with_existing_user[user2]
+2025-06-09 21:17:06,716 - INFO - Creating a user: {'User-Token': 'QdlYw2NkGtWVjpPsCHgbgWa6zHyE8enx4syx6q9Vl85WGwxRa/v7EgxzkIWFfXYyUhaGdYuO2uqCoTKTIqYHVg==', 'login': 'kqgbrjckwy'}
+2025-06-09 21:17:07,613 - INFO - Creating user with an existing email: {'error_code': 32, 'message': 'Username has already been taken; Email has already been taken'}
+2025-06-09 21:17:07,614 - INFO - 📝 STATUS TEST: test_user_creation_negative_with_existing_user[user2] — PASS
+2025-06-09 21:17:07,616 - INFO - ✅ END TEST: test_user_creation_negative_with_existing_user[user2]
+
+2025-06-09 21:17:07,619 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[]
+2025-06-09 21:17:07,622 - INFO - invalid_user: {'login': '', 'email': 'testuser_icyrifvyvo@gmail.com', 'password': 'tceNNXzuDTZmdzpKLchX'}
+2025-06-09 21:17:08,410 - INFO - response from creating a new user: {'User-Token': 'grNRcNnsiExJpq3C39EYPo7zs+ZNZrVOcTmruCSkOzJKSPFEIzDu94oZpizr2cfQQkXXxyxk1ZQlqHT0mdq03A==', 'login': '34959'}
+2025-06-09 21:17:08,411 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[] — FAIL
+2025-06-09 21:17:08,522 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[]
+
+2025-06-09 21:17:08,524 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[sLHfO0h4mj89VglmeTUaBUAXPoZwKOXmkkue4One4H0C5BmwOtE]
+2025-06-09 21:17:08,525 - INFO - invalid_user: {'login': 'sLHfO0h4mj89VglmeTUaBUAXPoZwKOXmkkue4One4H0C5BmwOtE', 'email': 'testuser_recumigock@gmail.com', 'password': 'JTKLyjSnnGAovdKmjPjm'}
+2025-06-09 21:17:08,950 - INFO - response from creating a new user: {'error_code': 32, 'message': "Username is too long (maximum is 20 characters); Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:08,952 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[sLHfO0h4mj89VglmeTUaBUAXPoZwKOXmkkue4One4H0C5BmwOtE] — PASS
+2025-06-09 21:17:08,953 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[sLHfO0h4mj89VglmeTUaBUAXPoZwKOXmkkue4One4H0C5BmwOtE]
+
+2025-06-09 21:17:08,956 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[login wvrxb spaces]
+2025-06-09 21:17:08,959 - INFO - invalid_user: {'login': 'login wvrxb spaces', 'email': 'testuser_znvwzzkpwc@gmail.com', 'password': 'VWoVoFlYyTcaOiplWLzl'}
+2025-06-09 21:17:09,524 - INFO - response from creating a new user: {'error_code': 32, 'message': "Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:09,525 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[login wvrxb spaces] — PASS
+2025-06-09 21:17:09,527 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[login wvrxb spaces]
+
+2025-06-09 21:17:09,530 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[\u043b\u043e\u0433\u0456\u043d_\u0436\u0447\u0441\u0439\u0433]
+2025-06-09 21:17:09,533 - INFO - invalid_user: {'login': 'логін_жчсйг', 'email': 'testuser_twbtjhxcoz@gmail.com', 'password': 'dQkYwBoyvQjJaKYQZgcJ'}
+2025-06-09 21:17:10,037 - INFO - response from creating a new user: {'error_code': 32, 'message': "Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Username must contain at least one letter; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:10,041 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[\u043b\u043e\u0433\u0456\u043d_\u0436\u0447\u0441\u0439\u0433] — PASS
+2025-06-09 21:17:10,045 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[\u043b\u043e\u0433\u0456\u043d_\u0436\u0447\u0441\u0439\u0433]
+
+2025-06-09 21:17:10,049 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[{|*_;&]^]
+2025-06-09 21:17:10,051 - INFO - invalid_user: {'login': '{|*_;&]^', 'email': 'testuser_huelaegoye@gmail.com', 'password': 'zNIWrbXACKdXKbjsnUcj'}
+2025-06-09 21:17:10,500 - INFO - response from creating a new user: {'error_code': 32, 'message': "Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Username must contain at least one letter; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:10,503 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[{|*_;&]^] — PASS
+2025-06-09 21:17:10,505 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[{|*_;&]^]
+
+2025-06-09 21:17:10,510 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[user\nname5]
+2025-06-09 21:17:10,515 - INFO - invalid_user: {'login': 'user\nname5', 'email': 'testuser_wnvahsiudv@gmail.com', 'password': 'ktwmaZcjKBypqezpssca'}
+2025-06-09 21:17:10,993 - INFO - response from creating a new user: {'error_code': 32, 'message': "Username can only contain letters (a-z), numbers (0-9) and the underscore (_); Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:10,995 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[user\nname5] — PASS
+2025-06-09 21:17:10,998 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[user\nname5]
+
+2025-06-09 21:17:11,003 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[91913]
+2025-06-09 21:17:11,008 - INFO - invalid_user: {'login': 91913, 'email': 'testuser_zhvdzyfeck@gmail.com', 'password': 'IjEWecwTEaZJhWoodwYQ'}
+2025-06-09 21:17:11,607 - INFO - response from creating a new user: {'error_code': 32, 'message': "Username must contain at least one letter; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:11,609 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[91913] — PASS
+2025-06-09 21:17:11,612 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[91913]
+
+2025-06-09 21:17:11,617 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_logins[None]
+2025-06-09 21:17:11,623 - INFO - invalid_user: {'login': None, 'email': 'testuser_bwsyrzrzdh@gmail.com', 'password': 'HvzsegkxUwcvDHiWwhjG'}
+2025-06-09 21:17:12,441 - INFO - response from creating a new user: {'User-Token': 'FvstEVWMKFaWpM3kdSE7a6zmAXGkisAWRxSDn81n8T9riC2lKKqc3yaF0lkKK+tF83G27f9ZZAOoNYhsup6q2Q==', 'login': '34960'}
+2025-06-09 21:17:12,443 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_logins[None] — FAIL
+2025-06-09 21:17:12,453 - INFO - ✅ END TEST: test_user_creation_negative_invalid_logins[None]
+
+2025-06-09 21:17:12,454 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[]
+2025-06-09 21:17:12,456 - INFO - invalid_user: {'login': 'wbuednwbeh', 'email': '', 'password': 'NRqIhPksxEzEhyqIhaDG'}
+2025-06-09 21:17:12,910 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:12,912 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[] — PASS
+2025-06-09 21:17:12,914 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[]
+
+2025-06-09 21:17:12,920 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[KRDfBTui0j]
+2025-06-09 21:17:12,925 - INFO - invalid_user: {'login': 'xvgrpojlhb', 'email': 'KRDfBTui0j', 'password': 'QachAABuIkXQVrKkRFKU'}
+2025-06-09 21:17:13,456 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:13,459 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[KRDfBTui0j] — PASS
+2025-06-09 21:17:13,461 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[KRDfBTui0j]
+
+2025-06-09 21:17:13,467 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[@rskon.com]
+2025-06-09 21:17:13,471 - INFO - invalid_user: {'login': 'uuxkwimteu', 'email': '@rskon.com', 'password': 'qBYvwbftKqvXKVVbmljw'}
+2025-06-09 21:17:14,065 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:14,067 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[@rskon.com] — PASS
+2025-06-09 21:17:14,070 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[@rskon.com]
+
+2025-06-09 21:17:14,075 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[pzwrr@.com]
+2025-06-09 21:17:14,080 - INFO - invalid_user: {'login': 'ckjfpjqwjm', 'email': 'pzwrr@.com', 'password': 'PFrcMzhpCgbRUcpenanl'}
+2025-06-09 21:17:14,530 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:14,533 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[pzwrr@.com] — PASS
+2025-06-09 21:17:14,535 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[pzwrr@.com]
+
+2025-06-09 21:17:14,540 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[kzzag@domain]
+2025-06-09 21:17:14,545 - INFO - invalid_user: {'login': 'eziulrzbmi', 'email': 'kzzag@domain', 'password': 'OBLIbDmVGCwonUdamEry'}
+2025-06-09 21:17:14,968 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:14,970 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[kzzag@domain] — PASS
+2025-06-09 21:17:14,973 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[kzzag@domain]
+
+2025-06-09 21:17:14,978 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[iwjaj domain.com]
+2025-06-09 21:17:14,984 - INFO - invalid_user: {'login': 'zkpwwjtbsx', 'email': 'iwjaj domain.com', 'password': 'XAKGJBVQjGbMhmtqqMCW'}
+2025-06-09 21:17:15,463 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:15,465 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[iwjaj domain.com] — PASS
+2025-06-09 21:17:15,467 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[iwjaj domain.com]
+
+2025-06-09 21:17:15,472 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[buazi@domain..com]
+2025-06-09 21:17:15,478 - INFO - invalid_user: {'login': 'annycoioxh', 'email': 'buazi@domain..com', 'password': 'oQhBfIrGKbtqbdkNwBLA'}
+2025-06-09 21:17:16,010 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:16,013 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[buazi@domain..com] — PASS
+2025-06-09 21:17:16,015 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[buazi@domain..com]
+
+2025-06-09 21:17:16,022 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[kwiul@.domain.com]
+2025-06-09 21:17:16,027 - INFO - invalid_user: {'login': 'mwjxqkpfsk', 'email': 'kwiul@.domain.com', 'password': 'jiTgyncinrIQVnSsQCjI'}
+2025-06-09 21:17:16,496 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:16,498 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[kwiul@.domain.com] — PASS
+2025-06-09 21:17:16,501 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[kwiul@.domain.com]
+
+2025-06-09 21:17:16,506 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[88741]
+2025-06-09 21:17:16,510 - INFO - invalid_user: {'login': 'unvyocunlz', 'email': 88741, 'password': 'pbyHNaNNdxGHKVCbIPZQ'}
+2025-06-09 21:17:16,944 - INFO - response from creating a new user: {'error_code': 32, 'message': "Email is not a valid email; Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:16,946 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[88741] — PASS
+2025-06-09 21:17:16,949 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[88741]
+
+2025-06-09 21:17:16,954 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_emails[None]
+2025-06-09 21:17:16,958 - INFO - invalid_user: {'login': 'zvfbvvanbz', 'email': None, 'password': 'iRWzICBaNDZWetNvfcKd'}
+2025-06-09 21:17:17,449 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:17,451 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_emails[None] — PASS
+2025-06-09 21:17:17,453 - INFO - ✅ END TEST: test_user_creation_negative_invalid_emails[None]
+
+2025-06-09 21:17:17,459 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[]
+2025-06-09 21:17:17,463 - INFO - invalid_user: {'login': 'kturfunipr', 'email': 'testuser_zpnuojaruq@gmail.com', 'password': ''}
+2025-06-09 21:17:17,903 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:17,906 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[] — PASS
+2025-06-09 21:17:17,908 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[]
+
+2025-06-09 21:17:17,913 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[l]
+2025-06-09 21:17:17,918 - INFO - invalid_user: {'login': 'gdiytrilhj', 'email': 'testuser_cnqmuheohg@gmail.com', 'password': 'l'}
+2025-06-09 21:17:18,378 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:18,380 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[l] — PASS
+2025-06-09 21:17:18,383 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[l]
+
+2025-06-09 21:17:18,387 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[GC7MNLq8cvHPSBbEvYxhzC26IJotAXWmqQp5dCKFgKB0nECJO1D]
+2025-06-09 21:17:18,390 - INFO - invalid_user: {'login': 'llqnlzxvpf', 'email': 'testuser_buxcxkvkfs@gmail.com', 'password': 'GC7MNLq8cvHPSBbEvYxhzC26IJotAXWmqQp5dCKFgKB0nECJO1D'}
+2025-06-09 21:17:18,835 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:18,837 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[GC7MNLq8cvHPSBbEvYxhzC26IJotAXWmqQp5dCKFgKB0nECJO1D] — PASS
+2025-06-09 21:17:18,839 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[GC7MNLq8cvHPSBbEvYxhzC26IJotAXWmqQp5dCKFgKB0nECJO1D]
+
+2025-06-09 21:17:18,844 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[pass xdmzw word]
+2025-06-09 21:17:18,849 - INFO - invalid_user: {'login': 'jdmvsbfwuv', 'email': 'testuser_xyyzhawvwk@gmail.com', 'password': 'pass xdmzw word'}
+2025-06-09 21:17:19,351 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:19,353 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[pass xdmzw word] — PASS
+2025-06-09 21:17:19,355 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[pass xdmzw word]
+
+2025-06-09 21:17:19,360 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[\u043f\u0430\u0440\u043e\u043b\u044c\u0432\u0439\u043e]
+2025-06-09 21:17:19,365 - INFO - invalid_user: {'login': 'kpihbqkspo', 'email': 'testuser_eheqettsrm@gmail.com', 'password': 'парольвйо'}
+2025-06-09 21:17:19,810 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:19,812 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[\u043f\u0430\u0440\u043e\u043b\u044c\u0432\u0439\u043e] — PASS
+2025-06-09 21:17:19,815 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[\u043f\u0430\u0440\u043e\u043b\u044c\u0432\u0439\u043e]
+
+2025-06-09 21:17:19,820 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[}+(^+(([]
+2025-06-09 21:17:19,825 - INFO - invalid_user: {'login': 'jkgexdsjrq', 'email': 'testuser_wtoyyvbhkg@gmail.com', 'password': '}+(^+((['}
+2025-06-09 21:17:20,272 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:20,274 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[}+(^+(([] — PASS
+2025-06-09 21:17:20,276 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[}+(^+(([]
+
+2025-06-09 21:17:20,282 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[pass\nword9]
+2025-06-09 21:17:20,287 - INFO - invalid_user: {'login': 'qqikodyuug', 'email': 'testuser_aqjpjokorj@gmail.com', 'password': 'pass\nword9'}
+2025-06-09 21:17:20,715 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:20,718 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[pass\nword9] — PASS
+2025-06-09 21:17:20,720 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[pass\nword9]
+
+2025-06-09 21:17:20,725 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[53642]
+2025-06-09 21:17:20,730 - INFO - invalid_user: {'login': 'laeghaghee', 'email': 'testuser_xcxgxgwayt@gmail.com', 'password': 53642}
+2025-06-09 21:17:21,233 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:21,235 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[53642] — PASS
+2025-06-09 21:17:21,237 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[53642]
+
+2025-06-09 21:17:21,243 - INFO - 
+🔹 START TEST: test_user_creation_negative_invalid_passwords[None]
+2025-06-09 21:17:21,247 - INFO - invalid_user: {'login': 'bdrluxsmrc', 'email': 'testuser_oqueieqtfx@gmail.com', 'password': None}
+2025-06-09 21:17:21,847 - INFO - response from creating a new user: {'error_code': 32, 'message': "Password can't be blank; Password is too short (minimum is 5 characters)"}
+2025-06-09 21:17:21,849 - INFO - 📝 STATUS TEST: test_user_creation_negative_invalid_passwords[None] — PASS
+2025-06-09 21:17:21,852 - INFO - ✅ END TEST: test_user_creation_negative_invalid_passwords[None]
+

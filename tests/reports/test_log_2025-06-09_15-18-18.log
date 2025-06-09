@@ -1,7 +1,0 @@
-2025-06-09 15:18:18,723 - INFO - 
-🔹 START TEST: test_user_creation_negative_with_existing_email[user0]
-2025-06-09 15:18:19,411 - INFO - Creating a user: {'User-Token': 'cK1Aw2Ze5F49dtunJp+KuUOYXqVKvKQYJpDExmqE5oq9BCrQOsrR639vbeVeyphXRWXZebJq9+Wkt5jXfZrmEw==', 'login': 'ecdepcmeek'}
-2025-06-09 15:18:20,090 - INFO - Creating user with an existing email: {'error_code': 32, 'message': 'Username has already been taken; Email has already been taken'}
-2025-06-09 15:18:20,091 - INFO - 📝 STATUS TEST: test_user_creation_negative_with_existing_email[user0] — PASS
-2025-06-09 15:18:20,094 - INFO - ✅ END TEST: test_user_creation_negative_with_existing_email[user0]
-

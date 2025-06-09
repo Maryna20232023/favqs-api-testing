@@ -1,5 +1,0 @@
-2025-06-09 15:38:21,580 - INFO - 
-🔹 START TEST: test_user_update_negative_non_existent_user
-2025-06-09 15:38:22,317 - INFO - 📝 STATUS TEST: test_user_update_negative_non_existent_user — FAIL
-2025-06-09 15:38:22,400 - INFO - ✅ END TEST: test_user_update_negative_non_existent_user
-

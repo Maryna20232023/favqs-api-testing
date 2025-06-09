@@ -3,8 +3,8 @@ import logging
 from utils.general_utils import generate_random_user, generate_invalid_logins, generate_invalid_emails, generate_invalid_passwords
 from utils.customer_utils import create_user, get_user
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+logger = logging.getLogger()
+pytestmark = [pytest.mark.api, pytest.mark.users, pytest.mark.regression]
 
 @pytest.mark.parametrize("user", [generate_random_user() for i in range(3)])
 def test_user_creation(user):
@@ -47,6 +47,8 @@ def test_user_creation_negative_with_existing_user(user):
     assert create_user_response_api.json()["message"] == 'Username has already been taken; Email has already been taken', f"Bad mes"
     assert create_user_response_api.json()["error_code"] == 32, f"API Response return wrong error_code"\
           f"Expected: 32, Actual error_code: {create_user_response_api.json()["error_code"]},"
+    assert create_user_response_api.status_code == 200, f"Bad Status code."\
+          f"Expected: 200, Actual status code: {create_user_response_api.status_code},"
 
 
 
@@ -61,6 +63,8 @@ def test_user_creation_negative_invalid_logins(login):
     create_user_response_api = create_user(user)
     logger.info(f"response from creating a new user: {create_user_response_api.json()}")
     assert create_user_response_api.json()['error_code'] == 32, f'data validation is not successful'
+    assert create_user_response_api.status_code == 200, f"Bad Status code."\
+          f"Expected: 200, Actual status code: {create_user_response_api.status_code},"
 
 @pytest.mark.parametrize("email", generate_invalid_emails())
 def test_user_creation_negative_invalid_emails(email):
@@ -73,7 +77,9 @@ def test_user_creation_negative_invalid_emails(email):
     create_user_response_api = create_user(user)
     logger.info(f"response from creating a new user: {create_user_response_api.json()}")
     assert create_user_response_api.json()['error_code'] == 32, f'data validation is not successful'
-    print(f'TEXT^{create_user_response_api.text}')
+    assert create_user_response_api.status_code == 200, f"Bad Status code."\
+          f"Expected: 200, Actual status code: {create_user_response_api.status_code},"
+
 
 @pytest.mark.parametrize("password", generate_invalid_passwords())
 def test_user_creation_negative_invalid_passwords(password):
@@ -86,4 +92,5 @@ def test_user_creation_negative_invalid_passwords(password):
     create_user_response_api = create_user(user)
     logger.info(f"response from creating a new user: {create_user_response_api.json()}")
     assert create_user_response_api.json()['error_code'] == 32, f'data validation is not successful'
-    print(f'TEXT^{create_user_response_api.text}')
+    assert create_user_response_api.status_code == 200, f"Bad Status code."\
+          f"Expected: 200, Actual status code: {create_user_response_api.status_code},"

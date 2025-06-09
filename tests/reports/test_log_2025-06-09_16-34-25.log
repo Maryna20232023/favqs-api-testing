@@ -1,7 +1,0 @@
-2025-06-09 16:34:25,096 - INFO - 
-🔹 START TEST: test_user_update_negative_non_existent_user
-2025-06-09 16:34:25,860 - INFO - Valid_user: {'user': {'login': 'xeloymyzdf', 'email': 'testuser_uwzutuoucx@gmail.com', 'password': 'KMMhKbhsXVGpxzCfltbv'}}
-2025-06-09 16:34:25,860 - INFO - Updating the user with  new data: {'user': {'login': 'smstvhitxi', 'email': 'testuser_dgejqtdsty@gmail.com'}}
-2025-06-09 16:34:26,294 - INFO - 📝 STATUS TEST: test_user_update_negative_non_existent_user — FAIL
-2025-06-09 16:34:26,384 - INFO - ✅ END TEST: test_user_update_negative_non_existent_user
-

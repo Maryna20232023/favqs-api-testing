@@ -75,13 +75,13 @@ def generate_user_data(email_domain=None, email_prefix=None):
 def generate_invalid_logins():
     list_of_invalid_logins = []
     invalid_login = [
-        "",  # Порожній логін
-        ''.join(random.choices(string.ascii_letters + string.digits, k=51)),  # Занадто довгий
-        'login ' + ''.join(random.choices(string.ascii_lowercase, k=5)) + ' spaces',  # Пробіли
-        'логін_' + ''.join(random.choices('йцукенгшщзфівапролджєячсмить', k=5)),  # Нелатиниця
-        ''.join(random.choices('!@#$%^&*()_+=[]{}|;', k=8)),  # Символи
-        'user\nname' + str(random.randint(1, 9)),  # Спецсимволи
-        random.randint(10000, 99999),  # Не рядок
+        "",
+        ''.join(random.choices(string.ascii_letters + string.digits, k=51)),
+        'login ' + ''.join(random.choices(string.ascii_lowercase, k=5)) + ' spaces',
+        'логін_' + ''.join(random.choices('йцукенгшщзфівапролджєячсмить', k=5)),
+        ''.join(random.choices('!@#$%^&*()_+=[]{}|;', k=8)),
+        'user\nname' + str(random.randint(1, 9)),
+        random.randint(10000, 99999),
         None  # None
     ]
     for i in invalid_login:
@@ -92,16 +92,16 @@ def generate_invalid_logins():
 def generate_invalid_emails():
     list_of_invalid_emails = []
     invalid_emails = [
-        "",  # Порожній
-        ''.join(random.choices(string.ascii_letters + string.digits, k=10)),  # Без @
-        '@' + ''.join(random.choices(string.ascii_lowercase, k=5)) + '.com',  # Без ім’я
-        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@.com',  # Немає домену
-        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@domain',  # Без точки
-        ''.join(random.choices(string.ascii_lowercase, k=5)) + ' domain.com',  # Пробіли
-        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@domain..com',  # Подвійна крапка
-        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@.domain.com',  # Починається з крапки
-        random.randint(10000, 99999),  # Не рядок
-        None  # None
+        "",
+        ''.join(random.choices(string.ascii_letters + string.digits, k=10)),
+        '@' + ''.join(random.choices(string.ascii_lowercase, k=5)) + '.com',
+        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@.com',
+        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@domain',
+        ''.join(random.choices(string.ascii_lowercase, k=5)) + ' domain.com',
+        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@domain..com',
+        ''.join(random.choices(string.ascii_lowercase, k=5)) + '@.domain.com',
+        random.randint(10000, 99999),
+        None
     ]
     for i in invalid_emails:
         list_of_invalid_emails.append(i)
@@ -111,15 +111,15 @@ def generate_invalid_emails():
 def generate_invalid_passwords():
     list_of_invalid_passwords = []
     invalid_passwords = [
-        "",  # Порожній
-        ''.join(random.choices(string.ascii_letters, k=1)),  # Занадто короткий
-        ''.join(random.choices(string.ascii_letters + string.digits, k=51)),  # Занадто довгий
-        'pass ' + ''.join(random.choices(string.ascii_lowercase, k=5)) + ' word',  # Пробіли
-        'пароль' + ''.join(random.choices('йцукенгшщзфівапролджєячсмить', k=3)),  # Нелатиниця
-        ''.join(random.choices('!@#$%^&*()_+=[]{}|;', k=8)),  # Тільки символи
-        'pass\nword' + str(random.randint(1, 9)),  # Спецсимволи (\n)
-        random.randint(10000, 99999),  # Не рядок
-        None  # None
+        "",
+        ''.join(random.choices(string.ascii_letters, k=1)),
+        ''.join(random.choices(string.ascii_letters + string.digits, k=51)),
+        'pass ' + ''.join(random.choices(string.ascii_lowercase, k=5)) + ' word',
+        'пароль' + ''.join(random.choices('йцукенгшщзфівапролджєячсмить', k=3)),
+        ''.join(random.choices('!@#$%^&*()_+=[]{}|;', k=8)),
+        'pass\nword' + str(random.randint(1, 9)),
+        random.randint(10000, 99999),
+        None
     ]
     for i in invalid_passwords:
         list_of_invalid_passwords.append(i)

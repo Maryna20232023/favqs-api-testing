@@ -19,13 +19,13 @@ def create_session(user):
     if 'User-Token' in response_api:
         return response_api['User-Token']
     elif error_code == 21:
-        print(f"Error 21: Invalid username or password – {response.json().get('message')}")
+        print(f"Error 21: Invalid username or password – {response_api.get('message')}")
     elif error_code == 22:
-        print(f"Error 22: Account not activated – {response.json().get('message')}")
+        print(f"Error 22: Account not activated – {response_api.get('message')}")
     elif error_code == 23:
-        print(f"Error 23: Username or password missing – {response.json().get('message')}")
+        print(f"Error 23: Username or password missing – {response_api.get('message')}")
     else:
-        print(f"Unknown session creation error: {response.json().get('message')}")
+        print(f"Unknown session creation error: {response_api.get('message')}")
 
     return None
 

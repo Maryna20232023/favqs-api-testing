@@ -1,9 +1,0 @@
-2025-06-09 16:14:22,694 - INFO - 
-🔹 START TEST: test_user_update_negative_non_existent_user
-2025-06-09 16:14:23,401 - INFO - Valid_user: {'user': {'login': 'ozqffqhxah', 'email': 'testuser_vvammrnbal@gmail.com', 'password': 'tgfpPknZHCcxGpHCJQrz'}}
-2025-06-09 16:14:23,402 - INFO - Updating the user with  new data: {'user': {'login': 'mippgjhlms', 'email': 'testuser_oxyelgeeha@gmail.com'}}
-2025-06-09 16:14:24,260 - INFO - Status code for updating user data with invalid new data: 200
-2025-06-09 16:14:24,261 - INFO - Message for updating user data with invalid new data: {"error_code": 20, "message": "No user session found."}
-2025-06-09 16:14:24,266 - INFO - 📝 STATUS TEST: test_user_update_negative_non_existent_user — PASS
-2025-06-09 16:14:24,271 - INFO - ✅ END TEST: test_user_update_negative_non_existent_user
-
